@@ -14,6 +14,6 @@ mvn test
 ```
 
 ## TESTS
-- For Loft website, title tests for Home, Category, Login & Store pages.
+- Loft website title tests for Home, Category, Login & Store pages.
 
 
