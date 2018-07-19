@@ -17,3 +17,9 @@ mvn test
 - Loft website title tests for Home, Category, Login & Store pages.
 
 
+## REPORTS 
+
+<img width="730" alt="screen shot 2018-07-19 at 2 17 45 pm" src="https://user-images.githubusercontent.com/34494816/42965084-8d88a8ea-8b5e-11e8-8613-09dd5738f8bd.png">
+
+
+
