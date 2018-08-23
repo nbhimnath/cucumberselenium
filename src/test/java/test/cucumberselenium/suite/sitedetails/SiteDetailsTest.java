@@ -11,6 +11,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import java.net.MalformedURLException;
+import java.net.URL;
 
 public class SiteDetailsTest {
 
@@ -24,7 +26,7 @@ public class SiteDetailsTest {
 
 
     @Before
-    public void setup () {
+    public void setup () throws MalformedURLException {
         //Create a Chrome driver. All test and page classes use this driver.
         //System.setProperty("webdriver.chrome.driver","REPLACE_WITH_PATH");
         //driver = new ChromeDriver();
