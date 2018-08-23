@@ -8,6 +8,8 @@ import cucumber.api.java.en.Then;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class SiteDetailsTest {
@@ -24,8 +26,9 @@ public class SiteDetailsTest {
     @Before
     public void setup () {
         //Create a Chrome driver. All test and page classes use this driver.
-        System.setProperty("webdriver.chrome.driver","REPLACE_WITH_PATH");
-        driver = new ChromeDriver();
+        //System.setProperty("webdriver.chrome.driver","REPLACE_WITH_PATH");
+        //driver = new ChromeDriver();
+        driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), DesiredCapabilities.chrome());
         //Create a wait. All test and page classes use this wait.
         wait = new WebDriverWait(driver,15);
         //Maximize Window
