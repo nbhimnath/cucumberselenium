@@ -30,7 +30,7 @@ public class SiteDetailsTest {
         //Create a Chrome driver. All test and page classes use this driver.
         //System.setProperty("webdriver.chrome.driver","REPLACE_WITH_PATH");
         //driver = new ChromeDriver();
-        driver = new RemoteWebDriver(new URL(System.getProperty("CHROME_HOST")+":4444/wd/hub"), DesiredCapabilities.chrome());
+        driver = new RemoteWebDriver(new URL(System.getProperty("chrome.host")+":4444/wd/hub"), DesiredCapabilities.chrome());
         //Create a wait. All test and page classes use this wait.
         wait = new WebDriverWait(driver,15);
         //Maximize Window
